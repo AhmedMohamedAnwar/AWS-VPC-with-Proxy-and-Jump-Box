@@ -95,6 +95,9 @@ sudo tail -f /var/log/squid/access.log
 ### Configure yum to Use Proxy
 #### Edit /etc/yum.conf and add:
 ```bash
+sudo vim /etc/yum.conf
+```
+```bash
 proxy=http://<username>:<password>@<proxy_server_private_IP>:3128
 
 ```
