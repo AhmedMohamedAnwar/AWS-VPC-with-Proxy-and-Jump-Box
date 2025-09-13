@@ -91,6 +91,7 @@ sudo systemctl restart squid.service
 sudo netstat -tulnp | grep 3128   # Check listening port
 sudo tail -f /var/log/squid/access.log
 ```
+### Configuring Private Instance 
 ### Configure yum to Use Proxy
 #### Edit /etc/yum.conf and add:
 ```bash
