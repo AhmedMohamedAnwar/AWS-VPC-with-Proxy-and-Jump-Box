@@ -15,9 +15,9 @@ provider "aws" {
 # Storing state file in S3 Backend
 terraform {
   backend "s3" {
-    bucket = "terraform-state-file-anwar63"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket       = "terraform-state-file-anwar63"
+    key          = "terraform.tfstate"
+    region       = "us-east-1"
     use_lockfile = true
     encrypt      = true
   }
