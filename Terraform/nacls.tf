@@ -11,7 +11,7 @@ resource "aws_network_acl" "Public_NACL" {
   }
 
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 100
     action     = "allow"
     cidr_block = "197.163.149.67/32" # my public IP
@@ -20,7 +20,7 @@ resource "aws_network_acl" "Public_NACL" {
   }
 
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 110
     action     = "allow"
     cidr_block = "197.163.149.67/32" # my public IP
@@ -29,7 +29,7 @@ resource "aws_network_acl" "Public_NACL" {
   }
   # allow ephemeral
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 120
     action     = "allow"
     cidr_block = "0.0.0.0/0"
@@ -48,7 +48,7 @@ resource "aws_network_acl" "Public_NACL" {
     to_port    = 0
   }
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 140
     action     = "allow"
     cidr_block = "10.0.1.0/24"
@@ -71,7 +71,7 @@ resource "aws_network_acl" "Private_NACL" {
   vpc_id = aws_vpc.Anwar_VPC_1.id
 
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 100
     action     = "allow"
     cidr_block = "10.0.3.0/24"
@@ -79,7 +79,7 @@ resource "aws_network_acl" "Private_NACL" {
     to_port    = 22
   }
   ingress {
-    protocol   = "6"
+    protocol   = "tcp"
     rule_no    = 110
     action     = "allow"
     cidr_block = "10.0.3.0/24"
