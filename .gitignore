@@ -1,4 +1,8 @@
 key_pair.tf
 terraform.tfstate
+<<<<<<< HEAD
 terraform.tfstate.backup
 .terraform*
+=======
+terraform.tfstate.backup
+>>>>>>> c57538f9e917a2cd383f13d4d42e407c5c40eb63

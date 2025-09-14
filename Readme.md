@@ -107,6 +107,7 @@ export http_proxy="http://<username>:<password>@<proxy_server_private_IP>:3128"
 export https_proxy="http://<username>:<password>@<proxy_server_private_IP>:3128"
 
 ```
+<<<<<<< HEAD
 
 ## Deployed a Docker container and established an SSH tunnel for secure remote access
 ### Know more about Image and code [Flasker App](https://github.com/AhmedMohamedAnwar/flask-docker-app)
@@ -133,3 +134,5 @@ ssh -i /home/anwar/.ssh/id_rsa -L 5000:10.0.1.153:5000 -N ec2-user@54.85.18.84
 
 
 
+=======
+>>>>>>> c57538f9e917a2cd383f13d4d42e407c5c40eb63
