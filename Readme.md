@@ -130,5 +130,8 @@ ssh -i /home/anwar/.ssh/id_rsa -L 5000:10.0.1.153:5000 -N ec2-user@54.85.18.84
 ![Tunnel](./Images/result.png)
 ### Private EC2 can not ping "ICMP" but Can curl "HTTP" google 
 ![Tunnel](./Images/private%20EC2.png)
+### Illustration gif 
+![GIF](Images/Proxy_Project.gif)
+
 
 
